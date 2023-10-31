@@ -1,7 +1,15 @@
-root {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+:root {
     --gray-888: #1e293b;
     --gray-600: #475569;
+    --purple: #7c3aed;
 }
+
 header {
     background-image: url(./imagens/Rectangle\ 1\ \(1\).png);
     background-size:cover ;
@@ -13,22 +21,49 @@ header {
 }
 main {
     padding-inline: 1.5rem;
-
 }
-
 .descricao{
     margin-bottom: 2.5rem;
 }
-
-
 .descricao h1 {
     color: var(--gray-888);
     margin-bottom: 1rem;
     font-size: 1.5625rem;
 }
-
 .descricao p {
     font-size: 0.8125rem;
     color: var(--gray-600);
 
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input-box div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.login label {
+    font-size: 0.875rem;
+    color: var(--gray-888);
+    font-weight: 600;
+
+}
+
+.login a {
+    color: var(--purple);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.login a:hover {
+    text-decoration:underline ;
 }
