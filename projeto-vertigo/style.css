@@ -76,7 +76,6 @@ main {
 .login a:hover {
     text-decoration:underline ;
 }
-
 .login button {
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -88,16 +87,47 @@ main {
     font-size: 1.6rem;
     font-weight: 700;
     color: var(--white);
-
 }
-
-
+ 
 .login >p {
     font-size: 1rem;
     color: var(--gray-600);
-
 }
 .login > p a {
     font-weight: 700;
     font-size: 1rem;
+}
+
+.bg-desktop{
+    display: none;
+}
+
+@media(nin-widht:1000px) {
+
+    body{
+        display: flex;
+    }
+
+    header {
+        background: none;
+        justify-content: flex-start;
+        padding-inline: 7rem;
+    }
+
+    header img{
+        width: 10rem;
+    }
+    main{
+        padding-inline: 7rem;
+    }
+
+    .conteudo {
+        width: 100%;
+    }
+
+    .bg-desktop{
+        display: block;
+        width: 100%;
+
+    }
 }
